@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo-inicio">Bem-vindo à nossa Loja Online!</h1>
+        <!--<label id="lupa" for="campoBusca"></label>-->
+        <input id="campoBusca" type="text" style="font-weight: bold;" placeholder="Procure aqui...">
+        <button></button>
+        <button></button>
+        <button id="btnCarrinho">🛒 Carrinho</button>
+        <button>Feminino</button>
+        <button>Masculino</button>
+        <button>Infantil</button>
+        <button>Casual</button>
+        <button>Social</button>
+    </header>
+
+    <main>
+        <div id="promocoes">
+            <!-- vão aparecer aqui diversas promoções da loja vida JavaScr-->
+        </div>
+
+        <div id="produtos-container">
+            <!-- Produtos serão exibidos aqui via JavaScript -->
+        </div>
+
+        <div id="carrinho-container" class="oculto">
+            <h2>Carrinho de compras</h2>
+            <ul id="itens-carrinho"></ul>
+                <!-- Itens adicionados ao carrinho aparecerão aqui -->
+            <p id='carrinho-total'>Total: R$ 0.00</p>
+        </div>
+    </main>
+
+    <script src="produtos.js"></script>
+    <script src="carrinho.js"></script>
+    <script src="checkout.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif; /* Escolhe a fonte da página */
+    margin: 0; /* Remove as margens padrões */
+    padding: 0; /* Remove o padding padrão */
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: 5px 10px 15px 20px 15px;
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    gap: 10px;
+}
+
+header h1 {
+    grid-row: 1;
+    font-size: small;
+}
+
+#campoBusca{
+    grid-row: 3;
+    grid-column: 5;
+    padding: 10px;
+}
+
+#lupa{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#btnCarrinho{
+    grid-row: 1;
+    grid-column: 10;
+}
+
+button {
+    padding: 5px 8px; /* Tamanho do botão */
+    background-color: #ffffff; /* Cor do fundo do botão */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor para "mãozinha" */
+    grid-row: 5;
+}
+
+button:hover {
+    text-decoration: underline; /*Mudar de cor quando passar o mouse em cima do botão*/
+    color: red;
+}
+
+button:disabled {
+    background-color: gray; /* Cor do botão quando estiver desabilitado */
+}
+
+#produtos-container {
+    display: grid; /* Usando grid para organizar os produtos */
+    grid-template-columns: repeat(3, 1fr); /* Dividindo a tela em 3 colunas */
+    gap: 10px; /* Espaço entre os itens */
+    padding: 20px; /* Adiciona um padding (espaço interno) */
+}
+
+.produto {      
+    border: 1px solid #ddd; /* Borda suave ao redor do produto */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: #f9f9f9; /* Cor de fundo */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Quando o mouse passa por cima, aumenta um pouco o tamanho */
+}
+
+.produto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#button-produto:hover {
+    background-color: rgb(122, 122, 122);
+    text-decoration: none;
+    border-radius: 50px;
+    color: #ddd;
+}
+
+#button-produto{
+    background-color: #ddd;
+    border-radius: 50px;
+    color: black;
+}
+
+#carrinho-container{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+#itens-carrinho {
+    list-style: none;
+    padding: 0;
+}
