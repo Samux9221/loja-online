@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-    exibirProdutos();
+    exibirProdutos(lista_produtos);
 });
