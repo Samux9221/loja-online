@@ -13,7 +13,7 @@
         <input id="campoBusca" type="text" style="font-weight: bold;" placeholder="Procure aqui...">
         <button></button>
         <button></button>
-        <button id="btnCarrinho">🛒 Carrinho</button>
+        <button id="btnCarrinho" class="carrinho">🛒 Carrinho</button>
         <button class="filtro-categoria" id="todos">Todos</button>
         <button class="filtro-categoria" id="feminino">Feminino</button>
         <button class="filtro-categoria" id="masculino">Masculino</button>
@@ -21,6 +21,18 @@
         <button class="filtro-categoria" id="casual">Casual</button>
         <button class="filtro-categoria" id="social">Social</button>
     </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="titulo-carrinho">Carrinho de compras</h2>
+            <div id="carrinho-container" class="oculto">
+                <ul id="itens-carrinho"></ul>
+                    <!-- Itens adicionados ao carrinho aparecerão aqui -->
+                <p id='carrinho-total'>Total: R$ 0.00</p>
+            </div>
+            <button id="fechar-modal">Sair</button>
+        </div>
+    </div>
 
     <main>
         <div id="promocoes">
@@ -31,12 +43,6 @@
             <!-- Produtos serão exibidos aqui via JavaScript -->
         </div>
 
-        <div id="carrinho-container" class="oculto">
-            <h2>Carrinho de compras</h2>
-            <ul id="itens-carrinho"></ul>
-                <!-- Itens adicionados ao carrinho aparecerão aqui -->
-            <p id='carrinho-total'>Total: R$ 0.00</p>
-        </div>
     </main>
 
     <script src="javaScript/produtos.js"></script>

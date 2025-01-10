@@ -12,7 +12,7 @@ function adicionarAoCarrinho(id){
             
             const divProduto = document.createElement("p");
             divProduto.classList.add('itens-carrinho');
-            divProduto.textContent = `${produtoSelecionado.nome}  (+${produtoSelecionado.preco})`;
+            divProduto.innerHTML = `${produtoSelecionado.nome}  (+${produtoSelecionado.preco})<button id="botao-produto-carrinho">❌</button>`;
 
             const totalCarrinhoElemento = document.getElementById('carrinho-total'); //selecionei o elemento
 
@@ -26,7 +26,21 @@ function adicionarAoCarrinho(id){
             produtoCarrinho.appendChild(divProduto);
 
     }else{
-        console.log("Produto não encontrado e não adicioando ao carrinho!");
+        console.log("Produto não encontrado e não adicionado ao carrinho!");
     }
-
 }
+
+/* Aqui vamos implemetar o modal que aparecerá quando o botão carrinho ser apertado */
+
+const botaoCarrinho = document.getElementById('btnCarrinho');
+const modal = document.getElementById('modal');
+
+botaoCarrinho.addEventListener('click', function(event){
+    modal.style.display = 'flex';
+})
+
+const fecharModal = document.getElementById('fechar-modal');
+
+fecharModal.addEventListener('click', function(event){
+    modal.style.display = "none";
+})

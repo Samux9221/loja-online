@@ -40,7 +40,7 @@ function exibirProdutos(produtos) {
 });
 }
 
-// Seleciona todos os botões da página
+// Seleciona todos os botões-filtros da página
 const botoes = document.querySelectorAll(".filtro-categoria");
 
 
