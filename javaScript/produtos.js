@@ -1,8 +1,7 @@
 
-
 const lista_produtos = [
-    {id: 1, nome: "Camisa Polo", preco: 79.90, imagem: "imagens/calca.jpg", categoria: ["masculino", "social"]},
-    {id: 2, nome: "Calça masculina", preco: 95.90, imagem: "imagens/camisetaPolo.webp", categoria: ["masculino", "casual"]},
+    {id: 1, nome: "Camisa Polo", preco: 79.90, imagem: "imagens/camisetaPolo.webp", categoria: ["masculino", "social"]},
+    {id: 2, nome: "Calça masculina", preco: 95.90, imagem: "imagens/calca.jpg", categoria: ["masculino", "casual"]},
     {id: 3, nome: "Meia social", preco: 32.75, imagem: "imagens/meia.jpg", categoria: ["social", "feminino", "masculino"]},
     {id: 4, nome: "Bermuda casual", preco: 57.80, imagem: "imagens/bermuda.jpg", categoria: ["masculino", "casual"]},
     {id: 5, nome: "Nike Airforce Original", preco: 670.95, imagem: "imagens/airforce.jpg", categoria: ["masculino"]},
