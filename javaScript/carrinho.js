@@ -78,6 +78,5 @@ function removerDoCarrinho(idRemover){
             carrinho.splice(indice, 1);
             console.log(`Produto com ID ${idRemover} foi removido do carrinho`);
         }
-        totalCarrinho = 0;
         exibirCarrinho(carrinho);
 }
